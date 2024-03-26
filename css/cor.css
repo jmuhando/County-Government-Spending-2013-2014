@@ -1,0 +1,121 @@
+ #title{
+            margin-left: 50px;
+            width: 600px;
+            border: 10px;
+            height: 10%;
+            font-size: 10px;
+            color: #5F5F5F;
+            font-family: "Lucida Console", Monaco, monospace;
+        }
+  #sidebar {
+    float: right;
+    margin: 0 auto;
+    width: 33%;
+    height: 500px;
+        }
+  #county{
+            font-size: 20px;
+            color: #5F5F5F;
+            font-family: "Lucida Console", Monaco, monospace;
+        }
+  #totals{
+            font-size: 20px;
+            color: #5F5F5F;
+        }
+  #tabs {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: #5F5F5F;
+        }
+    .ui-tabs .ui-tabs-nav li {
+  list-style: none;
+  float: left;
+  position: relative;
+  top: 0;
+  margin: 1px .2em 0 0;
+  border-bottom-width: 0;
+  padding: 0;
+  white-space: nowrap;
+  width: 48%;
+}
+   #gauge1{
+    width: 95%;
+   }
+   #heads0{
+    color: #5F5F5F;
+    float: right;
+    height: 40px;
+    width: 180px;
+    font-family: Helvetica; font-weight: bold;
+   }
+   #heads1{
+    color: #5F5F5F;
+    height: 40px; 
+    width: 180px;
+    font-family: Helvetica; font-weight: bold;
+   }
+   #tops{
+    color: #5F5F5F;
+    font-size: 17px;
+    margin-left: 40px;
+    height: 30px; 
+    width: 300px;
+    font-family: Helvetica; font-weight: bold;
+   }
+   #myRadarChart1{
+    height: 200px; 
+   }
+   #myRadarChart2{
+    height: 200px; 
+   }
+   .info {
+            padding: 6px 8px;
+            font: 19px/25px Arial, Helvetica, sans-serif;
+            background: red;
+            background: rgba(255,255,255,0.8);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+    .info h4 {
+            margin: 0 0 5px;
+            color: #5F5F5F;
+            font-family: "Lucida Console", Monaco, monospace;
+            font-size: 20px;
+        }  
+
+    #body {
+            width: 100%;
+            height: 700px;
+        }
+        #map {
+            vertical-align: 25%;
+            width: 65%;
+            height:98%;
+            border: 1px }
+        } 
+        .info {
+            padding: 6px 8px;
+            font: 19px/25px Arial, Helvetica, sans-serif;
+            background: red;
+            background: rgba(255,255,255,0.8);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+        .info h4 {
+            margin: 0 0 5px;
+            color: #5F5F5F;
+            font-family: "Lucida Console", Monaco, monospace;
+            font-size: 20px;
+        }
+        #loading {
+            position: absolute;
+            top: 100%;
+            left: 100%;
+            width: 70px;
+            height: 70px;
+            /* 1/2 of the height and width of the actual gif */
+            margin: -16px 0 0 -16px;
+            z-index: 100;
+        }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spending in counties for the FY 2013-2014</title>
+    <meta charset="utf-8" />
+    <script src="./js/queryloader2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', function() {
+        new QueryLoader2(document.querySelector("body"), {
+            barColor: "#efefef",
+            backgroundColor: "#111",
+            percentage: true,
+            maxTime: 10000,
+            barHeight: 5,
+            minimumTime: 200,
+            fadeOutTime: 1000
+        });
+    });
+</script>
+    <link rel="stylesheet" href="./css/cor.css"/>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src='http://api.tiles.mapbox.com/mapbox.js/v1.0.0/mapbox.js'></script>
+    
+    <script type="text/javascript">
+          $(function() {
+                $( "#tabs" ).tabs();
+            });
+    </script>
+    <script type="text/javascript" src="./js/Chart.js"></script><!--chart js source source code--> 
+    <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="./js/liquidFillGauge.js" language="JavaScript"></script>
+    <style>
+        .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+</head>
+<body >
+
+    <div id="sidebar">
+        <section id="county" align="center" class="data-container1"> Total County Government Budget 261.1 Billion </section> 
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">County Assembly</a></li>
+                <li><a href="#tabs-2">County Executive </a></li>
+            </ul>
+            <div id="tabs-1">
+                <section id="totals" align="center" class="data-container2">
+                  Total allocation 31.2 Billion  
+                </section>
+                <canvas id="myBarChart" height="180px" ></canvas>
+                <section id="totals" align="center" class="data-container4">
+                    Spent 24.5 Billion
+                </section>
+                <p style="font-size:10px">D.E = Development expenditure , R.E = Recurrent Expenditure , L.M = Loans & Mortages</p>
+            </div>
+            <div id="tabs-2">
+                <section id="totals" align="center" class="data-container3">
+                    Total allocation 229.8 Billion
+                </section>
+                <canvas id="myBarChart1" height="180px" ></canvas>
+                <section id="totals" align="center" class="data-container5">
+                    Spent 144.8 Billion
+                </section>
+                <p style="font-size:10px">D.E = Development expenditure , R.E = Recurrent Expenditure </p> 
+            </div>      
+        </div>
+        <section id="gauge1">
+            <p id="tops" style="font-size:17px; font-family: Helvetica;" align="center"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Absorption Rates</p>
+            <section id="heads0" height="40" width="180" style="font-size:11px" align="center">&nbsp; &nbsp;County Executive</section>
+            <section id="heads1" height="40" width="180" style="font-size:11px" align="center">&nbsp; &nbsp;County Assembly</section>
+            <svg id="fillgauge2"  height="150" width="160"  class="ones"></svg>
+            <svg id="fillgauge1"  height="150" width="160" style="float:right;" class="twos" ></svg> 
+
+        </section> 
+     </div>
+
+    <div id="body">
+    <div id="map"></div>
+    <script>src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"</script>
+    <script type="text/javascript" src="./js/spending.js"/></script><!--js source source code--> 
+    <script type="text/javascript" src="./js/cor.js"/></script><!--js source source code-->
+    <script type="text/javascript" src="./js/gauge.js"></script><!--gauges js source code-->
+    
+    </div>
+    
+</body>
+</html>
